@@ -3,124 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Departments - Academy Central</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800">
+    <title>Departments | Evergreen High School</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="design-root">
-        <div class="layout-container">
-            <header class="header">
-                <div class="brand">
-                    <div class="logo">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <h2>Evergreen High</h2>
-                </div>
-                <nav class="navigation">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="calendar.html">Calendar</a>
-                    <a href="departments.html">Departments</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-                <div class="actions">
-                    <button class="icon-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-                        </svg>
-                    </button>
-                    <button class="icon-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
-                        </svg>
-                    </button>
-                    <div class="avatar"></div>
-                </div>
-            </header>
-            
-            <main class="main-content">
-                <div class="page-header">
-                    <h1>Departments</h1>
-                </div>
-                
-                <div class="departments-grid">
-                    <a href="#" class="department-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"></path>
-                        </svg>
-                        <div class="department-info">
-                            <h3>Academic Affairs</h3>
-                            <p>Oversees curriculum and instruction.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="department-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path>
-                        </svg>
-                        <div class="department-info">
-                            <h3>Student Services</h3>
-                            <p>Supports student well-being and success.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="department-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"></path>
-                        </svg>
-                        <div class="department-info">
-                            <h3>Institutional Research</h3>
-                            <p>Analyzes institutional data.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="department-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"></path>
-                        </svg>
-                        <div class="department-info">
-                            <h3>Facilities Management</h3>
-                            <p>Manages campus infrastructure.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="department-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"></path>
-                        </svg>
-                        <div class="department-info">
-                            <h3>Registrar's Office</h3>
-                            <p>Handles student records and enrollment.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="department-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
-                        </svg>
-                        <div class="department-info">
-                            <h3>Communications</h3>
-                            <p>Manages internal and external communications.</p>
-                        </div>
-                    </a>
-                </div>
-            </main>
-            
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                    <p>@2024 Evergreen High. All rights reserved.</p>
-                </div>
-            </footer>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=facearea&w=80&h=80" alt="Evergreen High Logo" class="logo-img">
+                <span class="brand-title">Evergreen High</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="departments.html">Departments</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Departments</h1>
+                    <p>Meet the teams that make Evergreen High a great place to learn and grow.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1465808883808-8a8b1b6b43a5?auto=format&fit=crop&w=800&q=80" alt="Departments" class="hero-img">
+            </div>
+        </section>
+        <section class="departments-list">
+            <div class="container card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <h2>Academic Affairs</h2>
+                        <p>Oversees curriculum and instruction.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h2>Student Services</h2>
+                        <p>Supports student well-being and success.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h2>Institutional Research</h2>
+                        <p>Analyzes institutional data.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h2>Facilities Management</h2>
+                        <p>Manages campus infrastructure.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h2>Registrar's Office</h2>
+                        <p>Handles student records and enrollment.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h2>Communications</h2>
+                        <p>Manages internal and external communications.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; 2024 Evergreen High. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

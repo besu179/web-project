@@ -3,68 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Evergreen High</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800">
+    <title>Contact | Evergreen High School</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="design-root">
-        <div class="layout-container">
-            <header class="header">
-                <div class="brand">
-                    <div class="logo">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <h2>Evergreen High</h2>
-                </div>
-                <nav class="navigation">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="calendar.html">Calendar</a>
-                    <a href="departments.html">Departments</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-                <div class="actions">
-                    <button class="cta-button">Apply Now</button>
-                </div>
-            </header>
-            <main class="main-content contact-page">
-                <h2>Contact Us</h2>
-                <p>We're here to help! Please fill out the form below, and we'll get back to you as soon as possible.</p>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Enter the subject">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Enter your message" rows="6"></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Submit</button>
-                </form>
-            </main>
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                    <p>@2024 Evergreen High. All rights reserved.</p>
-                </div>
-            </footer>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=facearea&w=80&h=80" alt="Evergreen High Logo" class="logo-img">
+                <span class="brand-title">Evergreen High</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="departments.html">Departments</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Contact Us</h1>
+                    <p>We're here to help! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Contact Evergreen High" class="hero-img">
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <form class="contact-form">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Enter the subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Enter your message" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; 2024 Evergreen High. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

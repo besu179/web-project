@@ -3,136 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evergreen Design</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800">
+    <title>Evergreen High School</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="design-root">
-        <div class="layout-container">
-            <header class="header">
-                <div class="brand">
-                    <div class="logo">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <h2>Evergreen High</h2>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=facearea&w=80&h=80" alt="Evergreen High Logo" class="logo-img">
+                <span class="brand-title">Evergreen High</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="departments.html">Departments</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to Evergreen High</h1>
+                    <p>Empowering students to achieve their full potential through rigorous academics and a supportive community.</p>
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
                 </div>
-                <nav class="navigation">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="calendar.html">Calendar</a>
-                    <a href="departments.html">Departments</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-                <div class="actions">
-                    <button class="icon-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-                        </svg>
-                    </button>
-                    <button class="icon-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                            <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path>
-                        </svg>
-                    </button>
-                    <div class="avatar"></div>
-                </div>
-            </header>
-            
-            <main class="main-content">
-                <div class="hero">
-                    <div class="hero-text">
-                        <h1>Welcome to Evergreen High</h1>
-                        <p>Empowering students to achieve their full potential through rigorous academics and a supportive community.</p>
-                    </div>
-                    <button class="cta-button">Explore Our Programs</button>
-                </div>
-                
-                <section class="news-section">
-                    <h2>Latest News & Updates</h2>
-                    <div class="news-item">
-                        <div class="news-content">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="School Campus" class="hero-img">
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2>Latest News & Updates</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80" alt="Weather Closure" class="card-img">
+                        <div class="card-body">
                             <h3>School Closure Due to Weather</h3>
                             <p>All classes are canceled today, February 15th, due to severe weather conditions. Stay safe and warm.</p>
-                            <button class="read-more">Read More</button>
+                            <a href="#" class="btn btn-secondary">Read More</a>
                         </div>
-                        <div class="news-image"></div>
-                    </div>
-                    
-                    <div class="news-item">
-                        <div class="news-content">
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Parent-Teacher Conferences" class="card-img">
+                        <div class="card-body">
                             <h3>Upcoming Parent-Teacher Conferences</h3>
                             <p>Schedule your parent-teacher conference for March 5th. Appointments are available from 3 PM to 7 PM.</p>
-                            <button class="read-more">Schedule Now</button>
+                            <a href="#" class="btn btn-secondary">Schedule Now</a>
                         </div>
-                        <div class="news-image"></div>
-                    </div>
-                </section>
-                
-                <section class="events-section">
-                    <h2>Upcoming Events</h2>
-                    <div class="events-container">
-                        <div class="event-card">
-                            <div class="event-image"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1509228468518-c5eeecbff44a?auto=format&fit=crop&w=400&q=80" alt="Basketball Game" class="card-img">
+                        <div class="card-body">
                             <h3>Basketball Game</h3>
                             <p>Cheer on our team!</p>
                         </div>
-                        <div class="event-card">
-                            <div class="event-image"></div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1465808883808-8a8b1b6b43a5?auto=format&fit=crop&w=400&q=80" alt="Science Fair" class="card-img">
+                        <div class="card-body">
                             <h3>Science Fair</h3>
                             <p>Explore student projects.</p>
                         </div>
-                        <div class="event-card">
-                            <div class="event-image"></div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="School Play" class="card-img">
+                        <div class="card-body">
                             <h3>School Play</h3>
                             <p>Enjoy a night of theater.</p>
                         </div>
-                    </div>
-                </section>
-                
-                <section class="quick-links">
-                    <h2>Quick Links</h2>
-                    <div class="links-grid">
-                        <a href="calendar.html" class="link-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                                <path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"></path>
-                            </svg>
-                            <span>Academic Calendar</span>
-                        </a>
-                        <a href="about.html" class="link-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                                <path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"></path>
-                            </svg>
-                            <span>Student Handbook</span>
-                        </a>
-                        <a href="departments.html" class="link-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                                <path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path>
-                            </svg>
-                            <span>Faculty Directory</span>
-                        </a>
-                        <a href="contact.html" class="link-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                                <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path>
-                            </svg>
-                            <span>Campus Map</span>
-                        </a>
-                    </div>
-                </section>
-            </main>
-        </div>
-    </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="quick-links">
+            <div class="container">
+                <h2>Quick Links</h2>
+                <div class="links-grid">
+                    <a href="calendar.html" class="link-card">Academic Calendar</a>
+                    <a href="about.html" class="link-card">Student Handbook</a>
+                    <a href="departments.html" class="link-card">Faculty Directory</a>
+                    <a href="contact.html" class="link-card">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
-        <div class="footer-content">
+        <div class="container footer-content">
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 <a href="contact.html">Contact Us</a>
             </div>
-            <p>@2024 Evergreen High. All rights reserved.</p>
+            <p>&copy; 2024 Evergreen High. All rights reserved.</p>
         </div>
     </footer>
 </body>
