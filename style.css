@@ -23,10 +23,11 @@ body {
     min-height: 100vh;
 }
 
+/* --- Tighter Layout Adjustments --- */
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 12px;
 }
 
 .navbar {
@@ -75,13 +76,13 @@ body {
 
 .hero {
     background: var(--white);
-    padding: 3rem 0 2rem 0;
+    padding: 2rem 0 1.2rem 0;
 }
 .hero-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 .hero-text {
     flex: 1 1 320px;
@@ -132,18 +133,18 @@ body {
 }
 
 .news, .events, .quick-links {
-    padding: 2rem 0;
+    padding: 1.2rem 0;
 }
 .news h2, .events h2, .quick-links h2 {
     font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--primary);
 }
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
+    gap: 1.2rem;
 }
 .card {
     background: var(--white);
@@ -153,6 +154,7 @@ body {
     display: flex;
     flex-direction: column;
     transition: transform var(--transition), box-shadow var(--transition);
+    padding: 0.7rem 0 0.7rem 0;
 }
 .card:hover {
     transform: translateY(-4px) scale(1.02);
@@ -164,11 +166,11 @@ body {
     object-fit: cover;
 }
 .card-body {
-    padding: 1.2rem;
+    padding: 0.8rem 1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 0.5rem;
 }
 .card-body h3 {
     font-size: 1.2rem;
@@ -198,46 +200,18 @@ body {
     background: var(--primary);
     color: var(--white);
 }
-.footer {
-    background: var(--white);
-    border-top: 1px solid var(--gray);
-    padding: 2rem 0 1rem 0;
-    margin-top: 2rem;
-}
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.footer-links {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.5rem;
-}
-.footer-links a {
-    color: var(--secondary);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color var(--transition);
-}
-.footer-links a:hover, .footer-links a:focus {
-    color: var(--primary);
-}
-
 /* --- Contact Form Modern Styles --- */
 .contact-form {
     background: var(--white);
     border-radius: var(--radius);
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    padding: 2rem 1.5rem;
-    max-width: 500px;
+    padding: 1.2rem 0.7rem;
+    max-width: 420px;
     margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .form-group {
     display: flex;
@@ -306,34 +280,112 @@ body {
     display: inline-block;
 }
 
+/* --- Modern 3-Column Footer --- */
+.footer {
+    background: #111;
+    border-top: 1px solid var(--gray);
+    padding: 1.2rem 0 0.7rem 0;
+    margin-top: 1.2rem;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    color: #fff;
+}
+.footer-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+}
+.footer-links a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color var(--transition);
+}
+.footer-links a:hover, .footer-links a:focus {
+    color: var(--primary);
+}
+.footer-col h4 {
+    color: #fff;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-col li {
+    font-size: 1rem;
+    color: #ccc;
+}
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+.footer-col a:hover, .footer-col a:focus {
+    color: var(--primary);
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 0.7rem auto;
+}
 @media (max-width: 900px) {
-    .hero-content {
+    .footer-columns {
+        gap: 1.2rem;
+    }
+}
+@media (max-width: 700px) {
+    .footer-columns {
         flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .footer-col {
+        min-width: 0;
+        width: 100%;
         text-align: center;
     }
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        gap: 0.7rem;
+    }
     .navbar-content {
-        flex-direction: column;
-        gap: 1rem;
+        gap: 0.7rem;
     }
     .nav-links {
-        gap: 1rem;
+        gap: 0.7rem;
     }
 }
 @media (max-width: 600px) {
     .container {
-        padding: 0 8px;
+        padding: 0 4px;
     }
     .card-img {
-        height: 120px;
+        height: 100px;
     }
     .hero-img {
         max-width: 100%;
-        height: 180px;
+        height: 120px;
     }
     .news h2, .events h2, .quick-links h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
     }
     .contact-form {
-        padding: 1rem 0.5rem;
+        padding: 0.7rem 0.2rem;
     }
 }
