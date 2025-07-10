@@ -5,6 +5,7 @@ header('Access-Control-Allow-Methods: POST');
 
 echo 'this is from login.php';
 
-//hello
+
+
 
 ?>
